@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narsing Lokesh — Java Developer</title>
+  <meta name="description" content="Narsing Lokesh — Java Developer with 3.5 years of experience building Spring Boot backends and EV charging platforms (OCPP, OCPI) in Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1220'/%3E%3Cpath d='M18 4 8 18h7l-2 10 10-14h-7z' fill='%2334d399'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Narsing Lokesh — home">
+        <span class="logo-mark">NL</span>
+        <span class="logo-text">Narsing Lokesh</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="home">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Software Developer · EVGateway</p>
+          <h1 class="hero-title">Hi, I'm <span class="accent">Narsing Lokesh</span>.</h1>
+          <p class="hero-typed">
+            <span class="mono prompt" aria-hidden="true">&gt;</span> I build <span class="typed" id="typed">Java backends.</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-lead">
+            Java Developer with 3.5 years of experience across the SDLC — designing and shipping Spring Boot services,
+            REST APIs and portals that monitor and manage EV charging networks.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              Get in touch
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="assets/Narsing_Lokesh_Resume.docx" class="btn btn-ghost" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download résumé
+            </a>
+          </div>
+          <ul class="hero-meta">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Hyderabad, India
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <a href="mailto:narsinglokesh1998@gmail.com">narsinglokesh1998@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="code-file">LoadManager.java</span>
+            </div>
+<pre class="code"><code><span class="t-ann">@Service</span>
+<span class="t-kw">public class</span> <span class="t-type">LoadManager</span> {
+
+  <span class="t-cm">// Share site power equally across ports</span>
+  <span class="t-kw">public</span> <span class="t-type">Map</span>&lt;<span class="t-type">Port</span>, <span class="t-type">Double</span>&gt; <span class="t-fn">distribute</span>(<span class="t-type">Site</span> site) {
+    <span class="t-type">List</span>&lt;<span class="t-type">Port</span>&gt; active = site.<span class="t-fn">activePorts</span>();
+    <span class="t-kw">double</span> share = site.<span class="t-fn">powerLimitKw</span>()
+                 / active.<span class="t-fn">size</span>();
+
+    <span class="t-kw">return</span> active.<span class="t-fn">stream</span>().<span class="t-fn">collect</span>(<span class="t-fn">toMap</span>(
+        p -&gt; p,
+        p -&gt; <span class="t-type">Math</span>.<span class="t-fn">min</span>(share, p.<span class="t-fn">maxKw</span>())));
+  }
+}</code></pre>
+            <div class="charge">
+              <div class="charge-head">
+                <span>Site load</span>
+                <span class="charge-val"><span id="charge-pct">0</span>% of limit</span>
+              </div>
+              <div class="charge-track"><div class="charge-fill" id="charge-fill"></div></div>
+            </div>
+          </div>
+          <div class="floating-chip chip-a">Spring Boot</div>
+          <div class="floating-chip chip-b">OCPP · OCPI</div>
+          <div class="floating-chip chip-c">AWS</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="stats">
+          <div class="stat reveal">
+            <dt>Years of experience</dt>
+            <dd><span class="counter" data-target="3.5" data-decimals="1">0</span><span class="plus">+</span></dd>
+          </div>
+          <div class="stat reveal">
+            <dt>Companies</dt>
+            <dd><span class="counter" data-target="2">0</span></dd>
+          </div>
+          <div class="stat reveal">
+            <dt>EV platform projects</dt>
+            <dd><span class="counter" data-target="3">0</span></dd>
+          </div>
+          <div class="stat reveal">
+            <dt>Languages spoken</dt>
+            <dd><span class="counter" data-target="3">0</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">01</span>
+          <h2>About me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="lead">
+              I'm a backend-focused Java developer who enjoys turning complex, real-world systems into clean,
+              dependable software.
+            </p>
+            <p>
+              At <strong>EVGateway</strong>, I work on the Business Support Systems behind EV charging — the server that
+              talks to charging stations, and the portal operators use for dashboards, accounting and charging statistics.
+              My day-to-day spans requirement analysis, design, implementation with Spring Boot, JPA and Hibernate,
+              and testing with JUnit and Mockito.
+            </p>
+            <p>
+              I've worked in both Agile and Waterfall teams, and I care about the full lifecycle: code reviews,
+              CI/CD with Jenkins, debugging with SLF4J/Log4j, observing systems in Kibana and running workloads on AWS.
+            </p>
+          </div>
+
+          <aside class="about-side reveal">
+            <div class="card">
+              <h3 class="card-title">Strengths</h3>
+              <ul class="check-list">
+                <li>Works well under pressure</li>
+                <li>Hard-working and self-motivated</li>
+                <li>Clear communicator</li>
+                <li>Results-oriented — consistently meets deadlines</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Quick facts</h3>
+              <dl class="facts">
+                <div><dt>Based in</dt><dd>Hyderabad, India</dd></div>
+                <div><dt>Nationality</dt><dd>Indian</dd></div>
+                <div><dt>Languages</dt><dd>English, Telugu, Hindi</dd></div>
+                <div><dt>Methodologies</dt><dd>Agile, Waterfall</dd></div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">02</span>
+          <h2>Technical skills</h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            </div>
+            <h3>Languages</h3>
+            <ul class="tags"><li>Java</li><li>SQL</li><li>JavaScript</li><li>JSON</li><li>jQuery</li><li>JSP</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Frameworks</h3>
+            <ul class="tags"><li>Spring Boot</li><li>Spring MVC</li><li>Spring JPA</li><li>Hibernate</li><li>Log4j</li><li>SLF4J</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </div>
+            <h3>Databases</h3>
+            <ul class="tags"><li>Oracle</li><li>MySQL</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3>Design patterns</h3>
+            <ul class="tags"><li>Singleton</li><li>Factory</li><li>MVC</li><li>DAO</li><li>Microservices</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/></svg>
+            </div>
+            <h3>Testing &amp; quality</h3>
+            <ul class="tags"><li>JUnit</li><li>Mockito</li><li>Postman</li><li>SonarQube</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 0 0 4.5 12 3.5 3.5 0 0 0 6 19h11.5z"/></svg>
+            </div>
+            <h3>Cloud &amp; DevOps</h3>
+            <ul class="tags"><li>AWS</li><li>Jenkins CI/CD</li><li>Maven</li><li>Git / GitHub</li><li>Kibana</li><li>Jira</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            </div>
+            <h3>Web services</h3>
+            <ul class="tags"><li>RESTful APIs</li><li>SOAP</li><li>OCPP</li><li>OCPI</li></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
+            </div>
+            <h3>IDEs</h3>
+            <ul class="tags"><li>IntelliJ IDEA</li><li>Eclipse</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">03</span>
+          <h2>Experience</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker current" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Software Developer</h3>
+                  <p class="company">EVGateway India Private Limited</p>
+                </div>
+                <span class="date-pill current-pill">Nov 2023 — Present</span>
+              </div>
+              <ul class="bullets">
+                <li>Own requirement analysis, design and implementation of Java features for the EVG-Server and EVG-Portal.</li>
+                <li>Built REST APIs with Spring REST controllers and web pages with JSP backed by Spring Boot controllers.</li>
+                <li>Implemented persistence with Hibernate and Spring JPA; consumed both SOAP and RESTful services.</li>
+                <li>Delivered Load Management, distributing site power equally across charging ports to prevent overcapacity.</li>
+                <li>Created and maintained Jenkins jobs for CI/CD; monitored services with Kibana on AWS.</li>
+              </ul>
+              <ul class="tags tags-sm"><li>Spring Boot</li><li>JPA</li><li>OCPP</li><li>OCPI</li><li>AWS</li><li>Jenkins</li></ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Programmer Analyst</h3>
+                  <p class="company">Cognizant Technology Solutions Private Limited</p>
+                </div>
+                <span class="date-pill">Jul 2022 — Mar 2023</span>
+              </div>
+              <ul class="bullets">
+                <li>Developed and maintained Java / Spring applications following Agile practices.</li>
+                <li>Wrote unit tests with JUnit and integration tests with Mockito; traced issues with Log4j.</li>
+                <li>Identified and fixed defects reported in testing and production.</li>
+                <li>Took part in code reviews, managed check-ins with Git and tracked work in Jira.</li>
+              </ul>
+              <ul class="tags tags-sm"><li>Java</li><li>Spring MVC</li><li>Hibernate</li><li>JUnit</li><li>Git</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">04</span>
+          <h2>Projects</h2>
+        </header>
+
+        <article class="project-featured reveal">
+          <div class="project-info">
+            <p class="project-kicker">Featured · Software Developer</p>
+            <h3>EVGateway Platform</h3>
+            <p>
+              A platform for monitoring and managing EV charging stations — a backend server
+              (<strong>EVG-Server</strong>) and a frontend portal (<strong>EVG-Portal</strong>) for dashboards,
+              accounting and charging statistics.
+            </p>
+            <p>
+              I implemented <strong>Load Management</strong>: available site power is split equally across active
+              charging ports, preventing overcapacity while keeping charging uninterrupted within site limits.
+            </p>
+            <ul class="tags"><li>Spring Boot</li><li>Hibernate</li><li>JSP</li><li>REST</li><li>MySQL</li><li>AWS</li></ul>
+          </div>
+
+          <div class="lm-demo" aria-labelledby="lm-title">
+            <div class="lm-head">
+              <h4 id="lm-title">Try it: load management</h4>
+              <p>Toggle ports to see how the <span class="mono" id="lm-limit-label">66 kW</span> site limit is shared.</p>
+            </div>
+            <div class="lm-limit">
+              <label for="lm-limit">Site power limit</label>
+              <input type="range" id="lm-limit" min="22" max="132" step="11" value="66" />
+            </div>
+            <div class="lm-ports" id="lm-ports"></div>
+            <p class="lm-summary mono" id="lm-summary"></p>
+          </div>
+        </article>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+              </span>
+              <span class="project-role">Software Developer</span>
+            </div>
+            <h3>OCPP Server</h3>
+            <p class="project-sub">Open Charge Point Protocol</p>
+            <p>
+              Server implementing the industry-standard protocol between EV charging stations and a central management
+              system — handling connection management, monitoring, reporting and seamless integration.
+            </p>
+            <ul class="tags tags-sm"><li>Java</li><li>Spring Boot</li><li>JSON</li><li>Kibana</li></ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><path d="M8.6 7.4 15.4 16.6M9 6h6"/></svg>
+              </span>
+              <span class="project-role">Software Developer</span>
+            </div>
+            <h3>OCPI Integration</h3>
+            <p class="project-sub">Open Charge Point Interface</p>
+            <p>
+              Integrated OCPI so different EV charging networks, e-mobility service providers and operators can share
+              data and collaborate — enabling roaming across networks.
+            </p>
+            <ul class="tags tags-sm"><li>REST</li><li>Spring</li><li>JPA</li><li>Postman</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Education ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">05</span>
+          <h2>Education</h2>
+        </header>
+
+        <article class="edu-card reveal">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <h3>B.Tech — Bachelor of Technology</h3>
+            <p>Jawaharlal Nehru Technological University Hyderabad (JNTUH)</p>
+          </div>
+          <span class="date-pill">2019</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-wrap reveal">
+          <div class="contact-info">
+            <span class="section-num">06</span>
+            <h2>Let's work together</h2>
+            <p>
+              Open to Java / Spring Boot backend roles and interesting problems in e-mobility and beyond.
+              The fastest way to reach me is email.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:narsinglokesh1998@gmail.com">narsinglokesh1998@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="narsinglokesh1998@gmail.com" aria-label="Copy email address">Copy</button>
+              </li>
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+919346102314">+91 93461 02314</a>
+                </div>
+                <button class="copy-btn" data-copy="+919346102314" aria-label="Copy phone number">Copy</button>
+              </li>
+              <li>
+                <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span>Hyderabad, Telangana, India</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <p class="form-error" id="form-error" role="alert"></p>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send message
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
+            </button>
+            <p class="form-note">Opens your email app with the message pre-filled.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Narsing Lokesh. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
