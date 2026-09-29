@@ -19,3 +19,5 @@ The Quality lab checks the same power allocation function used by the charging s
 Controls support keyboard navigation. Animations respect reduced-motion preferences and can be paused with the header control. The portfolio uses a light theme. Motion preferences are saved locally when browser storage is available.
 
 Profile content lives in `index.html`, skill descriptions and simulations in `script.js`, and responsive styling in `styles.css`. The downloadable résumé is `Lokesh_Narsing_Resume.pdf`. Language and tool logos are local SVG assets in `assets/icons/`, with Devicon attribution and license included there.
+
+The professional portrait is `assets/lokesh-professional-portrait.png`, edited from the original `my-img.png` with the built-in image generation tool. The original is unchanged; the complete editing prompt is in `assets/portrait-edit-notes.md`.
