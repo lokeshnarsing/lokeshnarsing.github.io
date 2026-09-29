@@ -1,0 +1,1 @@
+Brand logos from [Devicon v2.17.0](https://github.com/devicons/devicon/tree/v2.17.0), distributed under the included MIT license. Logos identify the technologies; their trademarks belong to their respective owners. The generic concept icons are drawn locally in script.js.
