@@ -20,4 +20,4 @@ Controls support keyboard navigation. Animations respect reduced-motion preferen
 
 Profile content lives in `index.html`, skill descriptions and simulations in `script.js`, and responsive styling in `styles.css`. The downloadable résumé is `Lokesh_Narsing_Resume.pdf`. Language and tool logos are local SVG assets in `assets/icons/`, with Devicon attribution and license included there.
 
-The professional portrait is `assets/lokesh-professional-portrait.png`, edited from the original `my-img.png` with the built-in image generation tool. The original is unchanged; the complete editing prompt is in `assets/portrait-edit-notes.md`.
+The current portrait is `assets/lokesh-hoodie-portrait.png`, edited with the built-in image generation tool to replace the blazer with a charcoal hoodie. It appears in the hero and About section. The original `my-img.png` and previous formal portrait are retained. The clothing-edit prompt is in `assets/hoodie-portrait-edit-notes.md`; the initial portrait prompt is in `assets/portrait-edit-notes.md`.
